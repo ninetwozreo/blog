@@ -6,7 +6,7 @@ import {apiFactory} from './index'
 const kerApi = apiFactory('')
 export function listEssays (params) {
   // var obj = qs.stringify(params)
-  debugger
+
   return kerApi.get('/bs/essay/listEssay.do', {params: params})
 }
 export function saveEssay (params) {

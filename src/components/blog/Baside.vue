@@ -30,13 +30,13 @@
         <!--</el-submenu>-->
       <!--</el-submenu>-->
       <el-menu-item index="Bindex" class="blog_item">
-        <i class="el-icon-menu"></i>
-        <span slot="title">主页</span>
+        <!-- <i class="el-icon-menu"></i> -->
+        <span slot="title">查看</span>
       </el-menu-item>
-      <el-menu-item index="Paper" class="blog_item">
+      <!-- <el-menu-item index="Paper" class="blog_item">
         <i class="el-icon-setting"></i>
         <span slot="title">分类</span>
-      </el-menu-item>
+      </el-menu-item> -->
       <!--<el-menu-item index="4" class="blog_item">-->
         <!--<i class="el-icon-setting"></i>-->
         <!--<span slot="title">导航四</span>-->
@@ -93,27 +93,12 @@ export default {
     margin: 0 10px;
   }
 
-  a {
-    color: #42b983;
-  }
-  /*.el-header {*/
-    /*background-color: #B3C0D1;*/
-    /*color: #333;*/
-    /*line-height: 60px;*/
-  /*}*/
 
-  /*.el-aside {*/
-  /*color: #333;*/
-  /*}*/
-  /*-------------------------*/
-  /*@import url("//unpkg.com/element-ui@2.0.11/lib/theme-chalk/index.css");*/
-  . el-menu --inline {
 
-    background-color: #ff12747d !important;
 
-  }
   .blog_item{
     width: 70%;
+    border-radius: 50%;
   }
   .el-menu {
   border-right: 0px solid #e6e6e6;
@@ -121,15 +106,12 @@ export default {
   position: relative;
   margin: 0;
   padding-left: 0;
-    /*background-color: #ff12747d !important;*/
+  
+  }
+
+  .el-menu-vertical-demo.el-menu{
+  background-color:  rgba(224, 238, 255, 0)!important;
 
   }
-  /*.el-menu-item-group  {*/
-  /*border-right: 1px solid #e6e6e6;*/
-  /*list-style: none;*/
-  /*position: relative;*/
-  /*margin: 0;*/
-  /*padding-left: 0;*/
-  /*background-color: #000;*/
-  /*}*/
+
 </style>

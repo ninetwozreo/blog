@@ -38,15 +38,14 @@ module.exports = {
       // }
       // '/': {
       '/bs': {
-        // target: 'http://localhost:8085/framework',
-        // target: 'http://192.168.134.7:11000/framework',
-        // target: 'http://192.168.134.7:11000/framework',
+        target: 'http://129.28.203.109:8802/userServer',
         // target: 'http://localhost:8802/userServer',
-        target: 'http://127.0.0.1:8803/',
+        // target: 'http://127.0.0.1:8803/',
         changeOrigin:true,//是否跨域
         // ...proxyTableFactory('/bs', '/blog'),//待修改
         pathRewrite: {      //需要rewrite重写的, 如果在服务器端做了处理则可以不要这段
-          '^/bs': '/blog'
+          '^/bs': '/'
+          // '^/bs': '/blog'
         }
       },
       '/first': {

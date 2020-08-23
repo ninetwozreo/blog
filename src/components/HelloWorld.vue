@@ -1,7 +1,8 @@
 <template>
-  <div id="app" class="mainn">
+  <div id="app" ref="theImageUrl"  class="mainn">
 
-    <el-container>
+    
+    <el-container ref="33">
       <el-header><b-head></b-head></el-header>
       <el-main>
         <el-row :gutter="10">
@@ -41,8 +42,12 @@ export default {
   components: {BHead, Bindex, Baside, Head, Aside},
   data () {
     return {
+      imggg:".jpg",
       msg: 'Welcome to Shark place'
     }
+  },
+  mounted(){
+    debugger
   }
 }
 </script>
@@ -73,7 +78,7 @@ export default {
 
   /*+++++++++++++++++++++++++++++++++++++++++++*/
   .mainn {
-    background: rgba(0, 0, 0, 0) url("../assets/fj.jpg") no-repeat scroll 100% 100%;
+        background: rgba(0, 0, 0, 0) url("../assets/fj.jpg") no-repeat scroll 100% 100%;
     background-size: auto;
     background-size: cover;
     color: #333;

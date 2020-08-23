@@ -96,6 +96,12 @@ export default {
 }
 </script>
 <style>
+.el-footer[data-v-469af010], .el-header[data-v-469af010], [data-v-469af010] {
+    background-color: #823b3b00;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+}
   .box {
     width: 400px;
   .top {
